@@ -56,11 +56,11 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'restaurant_management.urls'
-
+import os
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,'home/template')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
