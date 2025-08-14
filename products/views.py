@@ -26,7 +26,7 @@ class ItemView(APIView):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
-
+#  To get the list of items
 def items_list(request):
     items = Item.objects.all()
     return render(request, 'items_list.html', {'items':items})
