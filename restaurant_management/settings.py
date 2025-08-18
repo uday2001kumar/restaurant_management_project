@@ -133,3 +133,4 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 RESTAURENT_NAME = "Delicious Bites"
+RESTAURENT_PHONE = 7873787234
