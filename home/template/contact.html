@@ -1,0 +1,21 @@
+{% extends index.html %}
+{% block title %}Contact Us  |  Delicious Bites{% endblock %}
+{% block content %}
+<h1>Contact Us</h1>
+<p>If you have any Questions or Feedback feel free reach out using the below form</p>
+
+<form action="" method="">
+    {% csrf_token %}
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="msg">Message</label>
+    <textarea id="msg" name="msg" rows="5" required></textarea><br><br>
+
+    <button type="submit">Send Message</button>
+</form> 
+{% endblock %}
